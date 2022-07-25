@@ -5,9 +5,9 @@
 ## Table of content 
 1. [Syllabus](#syllabus)
 2. [Usage](#usage)
-  1. [Lab 2](#lab-2)
+    1. [Lab 2](#lab-2)
 
-## Syllabus <a name="syllabus"></>
+## Syllabus <a name="syllabus">
 
 The course consists of 7 labs:
 * Lab 1 - Perceptron
@@ -19,9 +19,9 @@ The course consists of 7 labs:
 * Lab 7 - Deformed Stars method
 
 
-## Usage <a name="usage"></>
+## Usage <a name="usage">
 
-### Lab 2 <a name="lab-2"></>
+### Lab 2 <a name="lab-2">
 There are multiple files for this lab. They are:
 * Data generation - ```data.py```
 * Data normalization - ```normalize.py```
