@@ -1,5 +1,3 @@
-# README for courses
-
 # Computational Intelligence
 
 ## Table of content 
