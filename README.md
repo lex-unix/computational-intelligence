@@ -1,4 +1,10 @@
 # Computational Intelligence
+
+## Table of content 
+
+
+## Syllabus
+
 The course consists of 7 labs:
 * Lab 1 - Perceptron
 * Lab 2 - Backpropagation algorithm
@@ -7,3 +13,17 @@ The course consists of 7 labs:
 * Lab 5 - Fuzzy inference systems
 * Lab 6 - ANFIS
 * Lab 7 - Deformed Stars method
+
+
+## Usage
+
+### Lab 2
+There are multiple files for this lab. They are:
+* Data generation - ```data.py```
+* Data normalization - ```normalize.py```
+* Backpropagation algorithm - ```backpropagation.py```
+
+How to use it:
+1. Generate data based on function you need to predict values for.
+2. Normalize data.
+3. Run backpropagation algorithm.
