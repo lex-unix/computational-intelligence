@@ -5,7 +5,7 @@
 ## Table of content 
 1. [Syllabus](#syllabus)
 2. [Usage](#usage)
-    1. [Lab 2](#lab-2)
+    *. [Lab 2](#lab-2)
 
 ## Syllabus <a name="syllabus">
 
