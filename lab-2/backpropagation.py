@@ -141,4 +141,3 @@ predictions_df.to_excel('data/prediction.xlsx')
 # plt.xlabel('X-axis')
 # plt.ylabel('Y-axis')
 # plt.show()
-

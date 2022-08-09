@@ -11,11 +11,14 @@ MUTATION_CHANCE = .01
 N = 40
 F = Holder
 
+
 def create_population():
     return [Individual(F) for _ in range(N)]
 
+
 def fitness(data, f):
     return f(data[0], data[1])
+
 
 def panmixia(population):
     A = random.choice(population)
@@ -29,9 +32,10 @@ def mutation(Child):
         index = random.randint(0, GENOME_LENGTH - 1)
         if hasattr(F, 'MIN'):
             Child.genome[index] = random.uniform(F.MIN, F.MAX)
-        else: 
-            Child.genome[index] = random.uniform(F.MIN_X, F.MAX) if index == 0 else random.uniform(F.MIN_Y, F.MAX)
-        
+        else:
+            Child.genome[index] = random.uniform(
+                F.MIN_X, F.MAX) if index == 0 else random.uniform(F.MIN_Y, F.MAX)
+
     return Child
 
 
@@ -41,7 +45,7 @@ def inversion(Child):
     return Child
 
 
-def new_individual(population): 
+def new_individual(population):
 
     A, B = panmixia(population)
 
@@ -51,16 +55,15 @@ def new_individual(population):
 
     if random.random() < .5:
         return inversion(mutation(Child_1))
-    else: 
+    else:
         return inversion(mutation(Child_2))
-
 
 
 population = create_population()
 
 for _ in range(25000):
 
-    for individ in population: 
+    for individ in population:
         individ.fitness = (fitness(individ.genome, F.f))
 
     sorted_population = sorted(population, key=operator.attrgetter('fitness'))
@@ -72,14 +75,14 @@ for _ in range(25000):
     population = new_population
 
 
-for individ in population: 
+for individ in population:
     individ.fitness = (fitness(individ.genome, F.f))
 
 sorted_population = sorted(population, key=operator.attrgetter('fitness'))
 
 population = sorted_population[:int(N / 2) - 1]
 
-for individ in population: 
+for individ in population:
     print(individ.genome, individ.fitness)
 
 data = {

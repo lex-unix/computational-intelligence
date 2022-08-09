@@ -7,7 +7,7 @@ for i in range(1, 4):
     max_ = data[x].max()
     min_ = data[x].min()
     for j in range(len(data[x])):
-        new_x =  data[x][j]
+        new_x = data[x][j]
         data.loc[j, [x]] = (new_x - min_) / (max_ - min_)
 
 max_ = data['d1'].max()

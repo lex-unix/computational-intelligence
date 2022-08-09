@@ -1,7 +1,8 @@
 import random
-import pandas as pd 
+import pandas as pd
 
-from math import sin, exp
+from math import sin
+
 
 def my_function(x1, x2, x3):
     return sin(x1) + sin(x2) - sin(x3)
@@ -13,7 +14,7 @@ X3 = [random.randint(-2, 6) for x in range(40)]
 D = []
 
 for x1, x2, x3 in zip(X1, X2, X3):
-    D.append(my_function(x1, x2 ,x3))
+    D.append(my_function(x1, x2, x3))
 
 data = {
     'x1': X1,
@@ -28,7 +29,7 @@ if df['d1'].is_unique:
     avrg = sum(D) / len(D)
     D2 = []
     for d in D:
-       D2.append(0 if d < avrg else 1)
+        D2.append(0 if d < avrg else 1)
     df['d2'] = D2
     df['avrg'] = [avrg for x in range(len(df))]
     # df.to_excel('data.xlsx')
