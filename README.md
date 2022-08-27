@@ -27,35 +27,34 @@ weight factor of $W$. The result is called activation $a$.
 
 Train model for such equation:
 
-$$
+```math
 (x_{1} \wedge x_{2}) \vee x_{3}
-$$
+```
 
 Activation function:
-
-$$
- Y = \begin{cases} 1 & x \geq \theta \\ 0 & x < \theta \end{cases} 
-$$
+```math
+Y = \begin{cases}
+ 1 & x \geq \theta \\ 
+ 0 & x < \theta 
+\end{cases} 
+```
 
 If computed value is wrong, the difference between computed value $(Y)$ and real value $(T)$ is calculated:
-
-$$
+```math
 \delta = T - Y
-$$
+```
 
 To adjust weight first calculate:
-
-$$
+```math
 \Delta_{i}= \eta  \delta x_{i}
-$$
+```
+where $ \eta $ is learning rate.
 
-where $\eta$ is learning rate.
 
 Then find new value of $W$:
-
-$$
+```math
 w_{i}(n+1)=w_{i}(n)+\Delta_{i}, i= \overline{i,n} 
-$$
+```
 
 
 ### Lab 2
