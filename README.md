@@ -3,7 +3,9 @@
 ## Table of content 
 1. [Syllabus](#syllabus)
 2. [Usage](#usage)
+    * [Lab 1](#lab-1)
     * [Lab 2](#lab-2)
+3. [Notes](#notes)
 
 ## Syllabus
 
@@ -19,6 +21,43 @@ The course consists of 7 labs:
 
 ## Usage
 
+### Lab 1
+Given the training set of $X$. Each element of $X$ is multiplied by the appropriate 
+weight factor of $W$. The result is called activation $a$.
+
+Train model for such equation:
+
+$$
+(x_{1} \wedge x_{2}) \vee x_{3}
+$$
+
+Activation function:
+
+$$
+ Y = \begin{cases} 1 & x \geq \theta \\ 0 & x < \theta \end{cases} 
+$$
+
+If computed value is wrong, the difference between computed value $(Y)$ and real value $(T)$ is calculated:
+
+$$
+\delta = T - Y
+$$
+
+To adjust weight first calculate:
+
+$$
+\Delta_{i}= \eta  \delta x_{i}
+$$
+
+where $\eta$ is learning rate.
+
+Then find new value of $W$:
+
+$$
+w_{i}(n+1)=w_{i}(n)+\Delta_{i}, i= \overline{i,n} 
+$$
+
+
 ### Lab 2
 There are multiple files for this lab. They are:
 * Data generation - ```data.py```
@@ -29,3 +68,7 @@ How to use it:
 1. Generate data based on function you need to predict values for.
 2. Normalize data.
 3. Run backpropagation algorithm.
+
+
+## Notes
+**Be aware that Genetic Algorithm in Lab 3 is not correctly implemented and yet to be fixed**
