@@ -5,7 +5,7 @@
 2. [Usage](#usage)
     * [Lab 2](#lab-2)
 
-## Syllabus <a name="syllabus">
+## Syllabus
 
 The course consists of 7 labs:
 * Lab 1 - Perceptron
