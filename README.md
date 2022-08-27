@@ -17,9 +17,9 @@ The course consists of 7 labs:
 * Lab 7 - Deformed Stars method
 
 
-## Usage <a name="usage">
+## Usage
 
-### Lab 2 <a name="lab-2">
+### Lab 2
 There are multiple files for this lab. They are:
 * Data generation - ```data.py```
 * Data normalization - ```normalize.py```
