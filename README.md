@@ -52,7 +52,7 @@ To adjust weight first calculate:
 \Delta_{i}= \eta  \delta x_{i}
 ```
 
-where $ \eta $ is learning rate.
+where $\eta$ is learning rate.
 
 Then find new value of $W$:
 
